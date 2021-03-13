@@ -1,3 +1,5 @@
+#http://www.usaco.org/index.php?page=viewproblem2&cpid=1085
+
 N = int(input())
 cow_heights = input().split()
 stall_heights = input().split()

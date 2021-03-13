@@ -1,3 +1,5 @@
+#http://www.usaco.org/index.php?page=viewproblem2&cpid=615
+
 X,Y,M = map(int, input().split())
 high = 0
 

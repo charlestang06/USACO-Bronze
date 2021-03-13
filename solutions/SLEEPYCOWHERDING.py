@@ -1,0 +1,20 @@
+cows = sorted(list(map(int, input().split())))
+max_dist = max(cows[2]-cows[1], cows[1]-cows[0])
+min_dist = min(cows[2]-cows[1], cows[1]-cows[0])
+
+min_move = 0
+max_move = 0
+if cows[2]-cows[1] == 1 and cows[1]-cows[0] == 1:
+    min_move = 0
+    max_move = 0
+elif min_dist == 1:
+    min_move = 2
+    max_move = max_dist - 1
+elif min_dist == 2:
+    min_move = 1
+    max_move = max_dist - 1
+else:
+    min_move = 2
+    max_move = max_dist - 1
+print(min_move)
+print(max_move)
